@@ -1,0 +1,139 @@
+$border-color: #e0e0e0;
+
+.form__label__text{
+  display: block;
+  width: 100%;
+  position: relative;
+  margin-bottom: 25px;
+
+  input[type="text"],
+  input[type="tel"],
+  input[type="date"],
+  input[type="datetime-local"],
+  input[type="email"]{
+    display: block;
+    width: 100%;
+    padding:14px 24px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color:$f_black_light;
+    border:1px solid $border-color;
+  }
+
+  &.error input{
+    border-color:#ff0000;
+  }
+}
+
+.form__label__file{
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+  padding:14px 24px;
+
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  color:$f_black_light;
+  border:1px solid $border-color;
+}
+
+.form__label__textarea{
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+
+  textarea{
+    display: block;
+    width: 100%;
+    padding:14px 24px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color:$f_black_light;
+    border:1px solid $border-color;
+    height: 150px;
+  }
+
+  &.error textarea{
+    border-color:#ff0000;
+  }
+}
+
+.form__label__select{
+  display: block;
+  width: 100%;
+  margin-bottom: 25px;
+
+  select{
+
+    display: block;
+    width: 100%;
+    padding:14px 24px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    color:$f_black_light;
+    border:1px solid $border-color;
+  }
+
+  &.error select{
+    border-color:#ff0000;
+  }
+}
+
+.g__form__success{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color:$bg_white;
+  color:$f_yellow;
+  z-index: 100;
+
+  &::after{
+    z-index: 101;
+    content: '';
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    width:100px;
+    height:100px;
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iMTAwIiBoZWlnaHQ9IjEwMCIKdmlld0JveD0iMCAwIDE3MSAxNzEiCnN0eWxlPSIgZmlsbDojMDAwMDAwOyI+PGcgZmlsbD0ibm9uZSIgZmlsbC1ydWxlPSJub256ZXJvIiBzdHJva2U9Im5vbmUiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlLWxpbmVjYXA9ImJ1dHQiIHN0cm9rZS1saW5lam9pbj0ibWl0ZXIiIHN0cm9rZS1taXRlcmxpbWl0PSIxMCIgc3Ryb2tlLWRhc2hhcnJheT0iIiBzdHJva2UtZGFzaG9mZnNldD0iMCIgZm9udC1mYW1pbHk9Im5vbmUiIGZvbnQtd2VpZ2h0PSJub25lIiBmb250LXNpemU9Im5vbmUiIHRleHQtYW5jaG9yPSJub25lIiBzdHlsZT0ibWl4LWJsZW5kLW1vZGU6IG5vcm1hbCI+PHBhdGggZD0iTTAsMTcxLjk4ODYzdi0xNzEuOTg4NjNoMTcxLjk4ODYzdjE3MS45ODg2M3oiIGZpbGw9Im5vbmUiPjwvcGF0aD48ZyBmaWxsPSIjZmZkMzExIj48cGF0aCBkPSJNODUuNSw2Ljg0Yy00My40MDEzOSwwIC03OC42NiwzNS4yNTg2MSAtNzguNjYsNzguNjZjMCw0My40MDEzOSAzNS4yNTg2MSw3OC42NiA3OC42Niw3OC42NmM0My40MDEzOSwwIDc4LjY2LC0zNS4yNTg2MSA3OC42NiwtNzguNjZjMCwtNDMuNDAxMzkgLTM1LjI1ODYxLC03OC42NiAtNzguNjYsLTc4LjY2ek04NS41LDEzLjY4YzM5LjcwNDYxLDAgNzEuODIsMzIuMTE1MzkgNzEuODIsNzEuODJjMCwzOS43MDQ2MSAtMzIuMTE1MzksNzEuODIgLTcxLjgyLDcxLjgyYy0zOS43MDQ2MSwwIC03MS44MiwtMzIuMTE1MzkgLTcxLjgyLC03MS44MmMwLC0zOS43MDQ2MSAzMi4xMTUzOSwtNzEuODIgNzEuODIsLTcxLjgyek0xMTkuNjU5OTIsNTEuMjU5OTJjLTEuMTI4MjYsMC4wMjIyNCAtMi4xNzI5NCwwLjU5OTU2IC0yLjc5MjExLDEuNTQzMDFsLTM0Ljg4ODAxLDUxLjQyNjkxbC0yNC45MzUyNywtMjMuMTM4NDNjLTAuODkxNTQsLTAuODU3ODggLTIuMTc2ODgsLTEuMTY3NCAtMy4zNjEyMiwtMC44MDk0MWMtMS4xODQzNCwwLjM1Nzk5IC0yLjA4MzAxLDEuMzI3NjggLTIuMzUwMDYsMi41MzU3N2MtMC4yNjcwNiwxLjIwODA5IDAuMTM5MTQsMi40NjYyMyAxLjA2MjIyLDMuMjkwMDhsMzAuNzY2NjQsMjguNTQ4OTlsMzkuMzcwMDgsLTU4LjAxOTc3YzAuNzM2MzQsLTEuMDU1MDggMC44MTgyOSwtMi40MzQxMyAwLjIxMjA5LC0zLjU2ODk5Yy0wLjYwNjIsLTEuMTM0ODYgLTEuNzk3OTgsLTEuODMzNTMgLTMuMDg0MzUsLTEuODA4MTZ6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4=');
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size: cover;
+  }
+}
+
+#selectOnMap{
+  position: absolute;
+  top:50%;
+  right:27px;
+  transform: translateY(-50%);
+  width:25px;
+  height:25px;
+  cursor:pointer;
+  z-index: 2;
+
+  &:hover, &.active{
+    fill: $bg_yellow;
+  }
+}
+
+#selectOnMapArea{
+  overflow: hidden;
+  background-color:red;
+  width:100%;
+  height: 0;
+  transition: height linear .2s, margin-bottom linear .2s;
+  margin-bottom:0;
+
+  &.active{
+    height: 300px;
+    margin-bottom:20px;
+  }
+}

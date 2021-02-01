@@ -1,0 +1,83 @@
+.btn_default{
+  text-decoration:none;
+  border:0;
+  display:inline-block;
+  background-color:$bg_yellow;
+  color:$f_black_light;
+  padding:10px 20px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  transition: background-color linear .2s, color linear .2s;
+  outline: none;
+
+  &:hover, &:focus, &.active{
+    outline: none;
+    text-decoration:none;
+    background-color:$bg_black_light;
+    color:$f_white;
+  }
+}
+
+.btn_link{
+  border:0;
+  border-bottom:2px solid $f_yellow;
+  display:inline-block;
+  color:$f_black_light;
+  padding:10px 2px 2px;
+  margin-bottom:8px;
+  background-color: transparent !important;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  transition: border-color linear .2s, color linear .2s;
+  outline: none;
+  text-decoration:none;
+
+  &:hover, &:focus, &.active{
+    outline: none;
+    text-decoration:none;
+    color:$f_yellow;
+    border-color: transparent;
+  }
+}
+
+.btn__hit{
+  background-color: $f_green !important;
+  color:$f_white !important;
+  transition: opacity linear .2s;
+
+  &.nav-link{
+    opacity: .4;
+  }
+
+  &.active, &:hover, &:focus{
+    opacity: 1 !important;
+  }
+}
+.btn__rec{
+  background-color:$f_purple !important;
+  color:$f_white !important;
+  transition: opacity linear .2s;
+
+  &.nav-link{
+    opacity: .4;
+  }
+
+  &.active, &:hover, &:focus{
+    opacity: 1 !important;
+  }
+}
+.btn__sale{
+  background-color:$f_red !important;
+  color:$f_white !important;
+  transition: opacity linear .2s;
+
+  &.nav-link {
+    opacity: .4;
+  }
+
+  &.active, &:hover, &:focus{
+    opacity: 1 !important;
+  }
+}

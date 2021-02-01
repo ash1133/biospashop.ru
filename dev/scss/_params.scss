@@ -1,0 +1,20 @@
+$bg_white: #fff;
+$bg_yellow: #ffd311;
+$bg_gray: #eee;
+$bg_black_light: #212121;
+$bg_blue: #260d56;
+
+$f_black: #000000;
+$f_black_light: #212121;
+$f_yellow: #ffd311;
+$f_gray: #616161;
+$f_white: #fff;
+
+$f_green: #009900;
+$f_purple: #820087;
+$f_red: #cc0000; 
+
+@mixin box_shadow {
+  -webkit-box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+  box-shadow: 0 8px 17px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}

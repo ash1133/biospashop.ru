@@ -1,0 +1,52 @@
+.modal-content{
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+}
+.modal-header{
+  border-color: transparent;
+
+  .modal-title{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 28px;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: $f_black;
+  }
+  .close{
+    font-size: 80px;
+    font-weight: 200;
+    right: 10px;
+    top: -15px;
+    position: absolute;
+    color:$f_black;
+    outline: none;
+  }
+}
+
+.popover {
+  max-width: initial;
+}
+.modal-backdrop.show{
+  opacity: .8;
+}
+
+[data-dismiss=modal] {
+  font-size: 0!important;
+  color: transparent!important;
+  display: block;
+  position: absolute;
+  top: 0!important;
+  right: -60px!important;
+  width: 50px;
+  height: 50px;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABmJLR0QA/wD/AP+gvaeTAAABIklEQVRoge3ZXQ6CMBAE4Ooh1HhFOK4JeprxwTYZCQFauj8lnSd9cHa/oDTEEHp6enpOEwADgIeDPR4AhtIPj/hlssRExBR3GUsKbgBeseAD4Cmw59YOd9rhXbyDJaYaggrVMdURVKyGEUPQAHGMOIIGiWHUEDSwOkYdQYOrYcwQtMBhjDmCFinGuEHQQtkYd4iUHIxbRMoejHtEyhqmGUTKEqY5RAr+nyGm2WvzB7WszK6M+JW4ShWHEC4b7/3nFF+tpR92yaFpmrW7UzOYPbdY95icc8ItpuSwc4c5cmK7wRxBUIctpgaCumwwNRHUqYuRQFC3DkYSQTNkMRoImiWD0UTQzLoYCwTNroOxRNAOxzE4y19vsaT9P0N7enp6XOYLByjQJczGtKkAAAAASUVORK5CYII=");
+  transition: transform .2s linear;
+  cursor: pointer
+}
+
+[data-dismiss=modal]:hover {
+  transform: rotate(180deg)
+}
