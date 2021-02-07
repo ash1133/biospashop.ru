@@ -1,0 +1,26 @@
+.b-header__menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  li{
+    flex: 1 1 auto;
+    text-align: center;
+
+    a{
+      padding:15px 20px;
+      text-decoration: none;
+      display: block;
+      color:$f_white;
+      transition: color linear .2s;
+
+      &:hover, &:focus{
+        text-decoration: none;
+        color: #4d9ead!important;
+      }
+    }
+  }
+}

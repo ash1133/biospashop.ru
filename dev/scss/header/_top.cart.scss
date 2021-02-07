@@ -1,0 +1,11 @@
+.b-header__top__cart{
+  padding:10px 0;
+  display: inline-block;
+  color:$c_white;
+  transition: color linear .2s;
+
+  &:hover, &:focus{
+    text-decoration:none;
+    color: $c_green2;
+  }
+}

@@ -1,0 +1,9 @@
+.b-main{
+  .container{
+    padding:0 30px 30px;
+    background-color:$bg_white;
+  }
+}
+
+@import "banners.small";
+@import "brand.slider";

@@ -1,0 +1,12 @@
+.b-header{
+  background-color: $c_green;
+  color: $c_white;
+}
+
+@import "top.left.menu";
+@import "top.right.menu";
+@import "top.cart";
+@import "logo";
+@import "search";
+@import "contacts";
+@import "menu";

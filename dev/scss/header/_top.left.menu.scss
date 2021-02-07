@@ -1,0 +1,25 @@
+.b-header__top__left__menu{
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px 0;
+
+  li{
+    flex: 0 0 auto;
+    max-width: 100%;
+
+    &+li{
+      margin-left: 20px;
+    }
+  }
+
+  a{
+    color: $c_white;
+    text-decoration:none;
+    transition: color linear .2s;
+    &:hover,&:focus{
+      color: $c_green2;
+    }
+  }
+}
